@@ -1,9 +1,11 @@
+import CategoryTiles from "./components/CategoryTiles";
 import Hero from "./components/Hero";
 
 export default function Home() {
   return (
-    <div className="flex flex-row items-center justify-center ">
+    <main>
       <Hero/>
-    </div>
+      <CategoryTiles/>
+    </main>
   );
 }
