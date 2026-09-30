@@ -9,9 +9,10 @@ export type Product = {
 
 export const productsByCategory: Record<string, Product[]> = {
   "wool-clothing": [
-    { id: "wool-1", name: "Wool Sweater", price: 2500, category: "wool-clothing", image: "/products/sweater.jpg" },
-    { id: "wool-2", name: "Wool Cap", price: 800, category: "wool-clothing", image: "/products/cap.jpg" },
-    { id: "wool-3", name: "Wool Scarf", price: 1200, category: "wool-clothing", image: "/products/scarf.jpg" },
+    { id: "wool-1", name: "Wool Sweater", price: 2500, category: "wool-clothing", image: "/products/sweater-hd.jpg" },
+    { id: "wool-2", name: "Wool Cap", price: 800, category: "wool-clothing", image: "/products/wool-caps-hd.jpg" },
+    { id: "wool-3", name: "Wool Scarf", price: 1200, category: "wool-clothing", image: "/products/scarf-hd.jpg" },
+    { id: "wool-4", name: "Wool Scarf", price: 1200, category: "wool-clothing", image: "/products/store-hero.jpg" },
   ],
   "laces": [
     { id: "laces-1", name: "Baby Laces White", price: 500, category: "laces", image: "/products/laces-white.jpg" },
