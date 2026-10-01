@@ -23,7 +23,7 @@ export const productsByCategory: Record<string, Product[]> = {
     { id: "laces-5", name: "Baby Laces Green", price: 500, category: "laces", image: "/products/laces-green.jpg" },
   ],
   "strollers": [
-    { id: "strollers-1", name: "Stroller Model A", price: 12000, category: "strollers", image: "/products/stroller-a.jpg" },
+    { id: "strollers-1", name: "Stroller Model A", price: 12000, category: "strollers", image: "/products/stroller-a.jpg",isNew:true },
     // ... up to id: "15" for 7 strollers
   ],
 };
