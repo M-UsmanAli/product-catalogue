@@ -4,7 +4,7 @@ import type { Product } from "@/app/data/products";
 
 export default function ProductCard({ product }: { product: Product }) {
   const message = encodeURIComponent(
-    `Hi! I want to order: ${product.name} (Rs. ${product.price})`
+    `Hi! I want to order: ${product.image}  ${product.name} (Rs. ${product.price})`
   );
 
   return (
