@@ -5,6 +5,7 @@ export type Product = {
   category: string; // must match a slug in siteConfig.categories
   image: string; // path inside /public
   description?: string;
+  isNew?:boolean;
 };
 
 export const productsByCategory: Record<string, Product[]> = {
@@ -12,7 +13,7 @@ export const productsByCategory: Record<string, Product[]> = {
     { id: "wool-1", name: "Wool Sweater", price: 2500, category: "wool-clothing", image: "/products/sweater-hd.jpg" },
     { id: "wool-2", name: "Wool Cap", price: 800, category: "wool-clothing", image: "/products/wool-caps-hd.jpg" },
     { id: "wool-3", name: "Wool Scarf", price: 1200, category: "wool-clothing", image: "/products/scarf-hd.jpg" },
-    { id: "wool-4", name: "Wool Scarf", price: 1200, category: "wool-clothing", image: "/products/store-hero.jpg" },
+    { id: "wool-4", name: "Wool Scarf", price: 1200, category: "wool-clothing", image: "/products/store-hero.jpg", isNew:true },
   ],
   "laces": [
     { id: "laces-1", name: "Baby Laces White", price: 500, category: "laces", image: "/products/laces-white.jpg" },
@@ -26,3 +27,8 @@ export const productsByCategory: Record<string, Product[]> = {
     // ... up to id: "15" for 7 strollers
   ],
 };
+
+export const products: Product[] = Object.values(productsByCategory).flat();
+
+// New arrivals, pulled from the flat list
+export const newArrivals: Product[] = products.filter((p) => p.isNew);
